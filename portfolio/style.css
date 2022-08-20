@@ -1,0 +1,210 @@
+
+body{
+    font-family: Montserrat,sans-serif;
+  
+}
+nav{
+    position: relative;
+    background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%,
+     #f99185 52%, #cf556c 78%, #b12a5b 100%);
+    height: 80px;
+ 
+  
+}
+
+label.logo{
+    color: white;
+    font-size: 20px;
+    line-height: 80px;
+    padding: 0 25px;
+    font-weight: bold;
+}
+nav ul{
+   float:right;
+  margin-right: auto;
+}
+nav ul li{
+    display: inline-block;
+    line-height:80px ;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+} 
+a.active,a:hover{
+    background:#db9a21 ;
+    transition: 3s;
+}
+.checkbtn{
+    font-size: 35px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+.progress{ 
+  
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.certificate{
+width: 350px;
+height: 200px;
+display: flex;
+margin: 20px;
+justify-content: center;
+text-align: center;
+filter: drop-shadow(5px 5px 10px rgb(105, 156, 197));
+
+ 
+}
+.imgbox{
+display: flex;
+padding: 40px;
+justify-content: center;
+ flex-wrap: wrap;
+text-align: center;
+  
+ 
+}
+ .certificate:hover img{
+  transform: scale(1.1);
+  pointer-events: visibleFill;
+}
+section{
+    background-image: linear-gradient(to top, #c6e4e1 0%, #f4faed 100%);
+        width: 100%;
+     
+}
+.progress h2 {
+    font-weight: 400px;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    color:#026958;
+   text-transform: uppercase;
+   
+    font-size: 20px;
+}
+.skills{
+ 
+    background: #e1f386; 
+    width: 600px;
+    font-size: 12px;
+    box-shadow: 10px 10px 5px rgb(132, 223, 150);
+    -moz-box-shadow: 10px 10px 5px #ccc;
+    -webkit-box-shadow: 10px 10px 5px rgb(150, 202, 159);
+    -khtml-box-shadow: 10px 10px 5px rgb(207, 236, 198);
+    height: 5px;
+    border-radius: 5px;
+}
+.skills div{
+    background: #025f19;
+   width: 70vw;
+    height: 5px;
+    border-radius: 5px;
+   
+}
+.skills div span{
+    background: #0caf43;
+    border: 1px solid green;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: right;
+    margin-right: -20px;
+    margin-top: -11px;
+    color: #181002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.html div{
+   
+    width: 80%; 
+}
+.css div{
+   
+    width: 75%; 
+}
+.js div{
+   
+    width: 70%; 
+}
+.c div{
+    
+    width: 80%; 
+}
+@media (max-width: 850px)
+ {  
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position:absolute;
+        width: 100vw;
+        height: 100vh;
+
+        background: rgb(230, 135, 135);
+        top: 80px;
+        left: -100%;
+        transition: all .5s;
+        text-align: center;
+    }
+nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+}
+nav ul li a{
+    font-size: 20px;
+}
+a.active,a:hover{
+    background:none ;
+    color: rgb(169, 224, 224);
+}
+#check:checked ~ul {
+    left:0;
+ 
+}
+.progress{
+    width: 81vw;
+    height: 12vh;
+}
+.progress h2 {
+    margin-top: 74px;
+    margin-bottom: 104px;
+   
+}
+
+.progress{
+   
+    position: relative;
+    left: 20px;
+  
+}
+.certificate{
+    
+ height: 150px;
+ width: 280px;
+ }
+ .imgbox{
+  
+padding: 15px;
+ display: inline-block;
+ text-align: center;
+ 
+ }
+ 
+} 
